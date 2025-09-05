@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio/thovaguh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">inicio</a></li>
+            <li><a href="#sobre" class="menu-link">sobre</a></li>
+            <li><a href="#projetos" class="menu-link">projetos</a></li>
+            <li><a href="#contato" class="menu-link">contato</a></li>
+        </ul>
+    </nav>
+
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto de perfil" class="foto-perfil">
+        <h1>Gusthavo</h1>
+        <p class="txt-titulo">Desenvolvedor Front End</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-txt">Olá, eu sou Gusthavo! Desenvolvedor Front-End apaixonado por transformar ideias em interfaces bonitas, rápidas e intuitivas. Gosto de unir design e código para criar experiências que surpreendem e encantam. Se você procura alguém que escreve
+                código limpo, mas também coloca personalidade em cada detalhe da tela, acabou de encontrar.</p>
+        </div>
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">meus projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto1" class="projetos-imagem">
+                <div class="caixa-projetos-txt">
+                    <h3 class="info-projetos">wildflower</h3>
+                    <p class="paragrafo-projetos">este é apenas um exmplo de texto</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto2" class="projetos-imagem">
+                <div class="caixa-projetos-txt">
+                    <h3 class="info-projetos">chihiro</h3>
+                    <p class="paragrafo-projetos">exemplo de texto 2</p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto3" class="projetos-imagem">
+                <div class="caixa-projetos-txt">
+                    <h3 class="info-projetos">bittersuite</h3>
+                    <p class="paragrafo-projetos">e esteaqui seria o texto 3</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em contato</h2>
+        <form class="formulario" id="contato" onsubmit="enviarwhats(event)">
+            <div class="grupo-form">
+                <input placeholder="nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarwhats(event) {
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5518996872011'
+
+            const texto = `olá, me chamo ${nome}, ${mensagem}`
+            const msgformatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgformatada}`
+
+            window.open(url, '_blank')
+        }
+    </script>
+</body>
+
+</html>
