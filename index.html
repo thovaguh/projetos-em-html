@@ -1,102 +1,356 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anjo Azul 24h - Segurança Residencial</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="imagens/aguia.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">ANJO <strong>AZUL</strong></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#services-section">Serviços</a></li>
+            <li><a href="protecao.html">Saiba mais</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="#contact-section" class="btn-contact">Fale Conosco </a>
+        </div>
+      </div>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio/thovaguh</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <main>
+      <section class="anjo-azul-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-anjo">
+          <h1 class="animate-in">ANJO AZUL</h1>
+          <h2 class="animate-in">Sua Segurança Residencial 24 Horas</h2>
+          <p class="animate-in">
+            Tecnologia, tranquilidade e proteção completa para seu lar e sua
+            família.
+          </p>
+          <a href="#contact-form-section" class="btn-hero-cta animate-in"
+            >Fale com um Especialista
+          </a>
+        </div>
+      </section>
 
-<body>
+      <section class="about-anjo-azul">
+        <div class="container">
+          <p class="about-text">
+            Nós somos a <strong>Anjo Azul</strong>, nascidos com o propósito de
+            transformar a segurança domiciliar em
+            <strong>acessibilidade</strong> e <strong>eficiência</strong>.
+            Atuamos 24 horas, oferecendo soluções integradas que vão além da
+            vigilância: entregamos a paz de espírito.
+          </p>
+          <p class="about-text-secondary">
+            Combinamos a melhor <strong>tecnologia</strong> em câmeras, alarmes
+            e fechaduras com o conforto da energia limpa das
+            <strong>placas solares</strong>, garantindo que sua proteção nunca
+            falhe.
+          </p>
+        </div>
+      </section>
 
-    <div class="particulas"></div>
+      <section id="services-section" class="services-anjo-azul">
+        <div class="container">
+          <h3>Nossas Soluções de Proteção</h3>
+          <div class="services-grid">
+            <div class="service-card">
+              <i class="fas fa-video"></i>
+              <h4>Monitoramento Inteligente</h4>
+              <p>
+                Câmeras HD e sistemas de IA para detecção de movimento e
+                intrusão.
+              </p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-lock-open"></i>
+              <h4>Fechaduras e Acessos</h4>
+              <p>
+                Fechaduras eletrônicas, biometria e portões eletrônicos rápidos
+                e seguros.
+              </p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-bolt"></i>
+              <h4>Alarmes 24h</h4>
+              <p>
+                Sistemas de alarme com resposta imediata e sensores perimetrais
+                de alta precisão.
+              </p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-solar-panel"></i>
+              <h4>Placas Solares</h4>
+              <p>
+                Energia limpa para manter seu sistema de segurança operando sem
+                interrupções.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="carousel-container">
+        <div class="carousel-track" id="photo-track">
+          <div class="carousel-item">
+            <img
+              src="imagens/editar slides com gemini para direitos autorais/cercas.webp"
+              alt="Estrutura da Sede Anjo Azul"
+            />
+            <p>cercas - para proteger cada canto da sua casa.</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagens/editar slides com gemini para direitos autorais/instalarplacasolar.jpeg"
+              alt="Exemplo de Câmera de Segurança"
+            />
+            <p>Placas solares - reduza suas contas de luz.</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagens/editar slides com gemini para direitos autorais/instalarcameras.png"
+              alt="Instalação de Alarmes"
+            />
+            <p>Cameras de alto padrão - monitoramento 24h.</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagens/editar slides com gemini para direitos autorais/alarmes.webp"
+              alt="Exemplo de Câmera de Segurança"
+            />
+            <p>alarmes - para deixar voce mais seguro.</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagens/editar slides com gemini para direitos autorais/interfones.jpg"
+              alt="Exemplo de Câmera de Segurança"
+            />
+            <p>interfones - segurança de ponta a ponta.</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="carousel-dots" id="carousel-dots"></div>
 
+      <section class="location-map">
+        <div class="container map-grid">
+          <div class="location-info">
+            <h3>Onde Nos Encontrar</h3>
+            <p>
+              Visite-nos ou entre em contato diretamente. Estamos prontos para
+              proteger você.
+            </p>
+            <p class="address">
+              <i class="fas fa-map-marker-alt"></i> Av. Nove de Julho, 87 -
+              Centro, Assis - SP, 19800-020, Brasil
+            </p>
+            <p class="address-note">
+              Atendemos 24 horas em toda a região metropolitana.
+            </p>
+          </div>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.7422068638484!2d-50.42531582381345!3d-22.663398329219678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949539848f2cb573%3A0x77849037f705a284!2sAnjo%20Azul!5e0!3m2!1spt-BR!2sbr!4v1761237423068!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
 
-    <nav class="navegacao">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">inicio</a></li>
-            <li><a href="#sobre" class="menu-link">sobre</a></li>
-            <li><a href="#projetos" class="menu-link">projetos</a></li>
-            <li><a href="#contato" class="menu-link">contato</a></li>
-        </ul>
-    </nav>
+      <section id="contact-form-section" class="contact-form-whatsapp">
+        <div class="container">
+          <h3>Solicite seu orçamento</h3>
+          <p>
+            Preencha os dados e seremos direcionados para uma conversa rápida e
+            segura.
+          </p>
 
+          <form id="whatsapp-form" class="whatsapp-form">
+            <input
+              type="text"
+              name="nome"
+              placeholder="Seu Nome Completo"
+              required
+            />
+            <input
+              type="tel"
+              name="telefone"
+              placeholder="Seu Telefone com DDD (Ex: 1199887766)"
+              required
+            />
+            <textarea
+              name="mensagem"
+              placeholder="Breve descrição do serviço desejado (Câmeras, Alarme, etc.)"
+              required
+            ></textarea>
 
-    <main id="inicio" class="cabecalho">
-        <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto de perfil" class="foto-perfil">
-        <h1>Gusthavo</h1>
-        <p class="txt-titulo">Desenvolvedor Front End</p>
+            <button type="submit" class="btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> Enviar Mensagem via WhatsApp
+            </button>
+          </form>
+
+          <p class="form-note">Garantimos a privacidade dos seus dados.</p>
+        </div>
+      </section>
     </main>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">sobre mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-txt">Olá, eu sou Gusthavo! Desenvolvedor Front-End apaixonado por transformar ideias em interfaces bonitas, rápidas e intuitivas. Gosto de unir design e código para criar experiências que surpreendem e encantam. Se você procura alguém que escreve
-                código limpo, mas também coloca personalidade em cada detalhe da tela, acabou de encontrar.</p>
-        </div>
-    </section>
-
-
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">meus projetos</h2>
-        <div class="projetos-caixa">
-
-            <div class="projetos-card">
-                <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto1" class="projetos-imagem">
-                <div class="caixa-projetos-txt">
-                    <h3 class="info-projetos">wildflower</h3>
-                    <p class="paragrafo-projetos">este é apenas um exmplo de texto</p>
-                </div>
-            </div>
-            <div class="projetos-card">
-                <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto2" class="projetos-imagem">
-                <div class="caixa-projetos-txt">
-                    <h3 class="info-projetos">chihiro</h3>
-                    <p class="paragrafo-projetos">exemplo de texto 2</p>
-                </div>
-            </div>
-            <div class="projetos-card">
-                <img src="img/billie-eilish-hit-me-hard-and-soft-e1712590203470.webp" alt="foto3" class="projetos-imagem">
-                <div class="caixa-projetos-txt">
-                    <h3 class="info-projetos">bittersuite</h3>
-                    <p class="paragrafo-projetos">e esteaqui seria o texto 3</p>
-                </div>
-            </div>
+    <footer class="footer-anjo-azul">
+      <div class="container footer-grid">
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+551833238474" class="footer-link"
+            ><strong>18 3323 - 8474</strong></a
+          >
         </div>
 
-    </section>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:AnjoAzul2015@hotmail.com" class="footer-link"
+            ><strong>AnjoAzul2015@hotmail.com</strong></a
+          >
+        </div>
 
+        <div class="social-links-footer">
+          <a
+            href="https://www.instagram.com/anjo__azull/"
+            target="_blank"
+            class="social-icon-footer instagram-bg"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/5518997441247"
+            target="_blank"
+            class="social-icon-footer whatsapp-bg"
+            aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em contato</h2>
-        <form class="formulario" id="contato" onsubmit="enviarwhats(event)">
-            <div class="grupo-form">
-                <input placeholder="nome" class="campo-form" id="nome">
-            </div>
-
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="digite sua mensagem" rows="6" id="mensagem"></textarea>
-            </div>
-            <button type="submit" class="botao">Enviar</button>
-        </form>
-    </section>
-
+      <div class="rights-bar">
+        <div class="container">
+          <p>
+            &copy; 2025 <strong>Anjo Azul Segurança 24h</strong>. Todos os
+            direitos reservados.
+          </p>
+          <p class="creator-note">
+            By
+            <strong
+              ><a href="mailto:gusthavoerick09@gmail.com">thovaguh</a></strong
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script>
-        function enviarwhats(event) {
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5518996872011'
+      // parte das fotos
+      const track = document.getElementById("photo-track");
+      const dotsContainer = document.getElementById("carousel-dots");
 
-            const texto = `olá, me chamo ${nome}, ${mensagem}`
-            const msgformatada = encodeURIComponent(texto)
+      // Verificamos se o carrossel existe antes de tentar manipulá-lo
+      if (track) {
+        const items = track.querySelectorAll(".carousel-item");
+        const totalItems = items.length;
+        let currentIndex = 0;
+        const intervalTime = 1000; // Tempo em milissegundos (4 segundos)
+        let slideInterval;
 
-            const url = `https://wa.me/${telefone}?text=${msgformatada}`
-
-            window.open(url, '_blank')
+        // Função para ir diretamente a um slide
+        function goToSlide(index) {
+          currentIndex = index;
+          updateCarousel();
+          // Reseta o temporizador para que o slide automático não pule
+          clearInterval(slideInterval);
+          slideInterval = setInterval(nextSlide, intervalTime);
         }
-    </script>
-</body>
 
+        // Função para ir para o próximo slide
+        function nextSlide() {
+          currentIndex++;
+          if (currentIndex >= totalItems) {
+            currentIndex = 0; // Volta ao início (efeito infinito)
+          }
+          updateCarousel();
+        }
+
+        // Função que aplica a transformação CSS e atualiza os dots
+        function updateCarousel() {
+          const offset = -currentIndex * 100;
+          track.style.transform = `translateX(${offset}%)`;
+          updateDots();
+        }
+
+        // Cria os dots de navegação e os atualiza
+        function updateDots() {
+          dotsContainer.innerHTML = "";
+          for (let i = 0; i < totalItems; i++) {
+            const dot = document.createElement("span");
+            dot.classList.add("dot");
+            if (i === currentIndex) {
+              dot.classList.add("active");
+            }
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+          }
+        }
+
+        // Inicializa o carrossel
+        updateCarousel();
+        slideInterval = setInterval(nextSlide, intervalTime);
+
+        // Pausar o slide quando o mouse estiver sobre o carrossel
+        const carouselContainer = document.querySelector(".carousel-container");
+        carouselContainer.addEventListener("mouseenter", () =>
+          clearInterval(slideInterval)
+        );
+        carouselContainer.addEventListener(
+          "mouseleave",
+          () => (slideInterval = setInterval(nextSlide, intervalTime))
+        );
+      }
+
+      // LÓGICA DO WHATSAPP
+      const whatsappForm = document.getElementById("whatsapp-form");
+      if (whatsappForm) {
+        whatsappForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const nome = document.querySelector('input[name="nome"]').value;
+          const telefone = document.querySelector(
+            'input[name="telefone"]'
+          ).value;
+          const mensagem = document.querySelector(
+            'textarea[name="mensagem"]'
+          ).value;
+
+          const numeroWhatsApp = "551199887766";
+
+          const textoMensagem = `Olá, Anjo Azul! Meu nome é ${nome} e meu telefone é ${telefone}. Gostaria de um orçamento para: ${mensagem}`;
+
+          const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
+            textoMensagem
+          )}`;
+
+          window.open(linkWhatsApp, "_blank");
+        });
+      }
+    </script>
+  </body>
 </html>
